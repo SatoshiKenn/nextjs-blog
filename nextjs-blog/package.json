@@ -6,19 +6,15 @@
     "start": "next start"
   },
   "dependencies": {
-    "clsx": "^2.0.0",
-    "date-fns": "^2.30.0",
+    "date-fns": "^2.29.3",
     "gray-matter": "^4.0.3",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "remark": "^15.0.1",
-    "remark-html": "^16.0.1"
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.1"
   },
   "engines": {
     "node": ">=18"
-  },
-  "devDependencies": {
-    "sass": "^1.69.5"
   }
 }

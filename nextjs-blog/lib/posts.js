@@ -1,10 +1,10 @@
-import { remark } from 'remark';
-import html from 'remark-html';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import { remark } from 'remark';
+import html from 'remark-html';
 
-const postsDirectory = path.join(process.cwd(), 'pages/posts');
+const postsDirectory = path.join(process.cwd(), 'posts');
 
 export function getSortedPostsData() {
   // Get file names under /posts
@@ -38,20 +38,6 @@ export function getSortedPostsData() {
 
 export function getAllPostIds() {
   const fileNames = fs.readdirSync(postsDirectory);
-
-  // Returns an array that looks like this:
-  // [
-  //   {
-  //     params: {
-  //       id: 'ssg-ssr'
-  //     }
-  //   },
-  //   {
-  //     params: {
-  //       id: 'pre-rendering'
-  //     }
-  //   }
-  // ]
   return fileNames.map((fileName) => {
     return {
       params: {
